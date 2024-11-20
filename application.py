@@ -4,20 +4,30 @@
 # total number of players
 # equal number. 2 teams
 # dunder main, html, javascript, 
-# flake8, debugger
+# flake8, debugger, pep8, pep20
 # python3 applications will not run the content of the dm.py file
+# nested lists and dictionaries
 import dm
-from constants import players
-from constants import teams
+from contstants import PLAYERS
+from constants import TEAMS
 
 
-
-
-# all CAPS variable that cannot be changed
-def clean_data():
-	copy.deepcopy(height)
-	copy.deepcopy(experience=True or False)
-	players
-	teams
+def a():
+	new_variable = PLAYERS + TEAMS
+	print(new_variable)
+	makevar.list(new_variable)
+	for key, value in makevar.items():
+		print(key)
+	return
 
 # lists with nested dictionaries
+
+
+def clean_data(data):
+	cleaned = [] # new list named cleaned
+
+
+
+	return cleaned
+
+print(clean_data(data))
