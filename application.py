@@ -1,22 +1,14 @@
 #name:
-#guardians
-#experience
-#height
 #list of teams
 #list of players
-# cleaning up player data
 # total number of players
 # equal number. 2 teams
-# dunder main, html, javascript, 
+# dunder main, html, javascript, clean_data, debbuger, (set-dictionary-list_comprehensions)
 # flake8, debugger, pep8, pep20, clean
 # python3 applications will not run the content of the dm.py file
-# nested lists and dictionaries
 import dm
 import copy
 from constants import PLAYERS
-
-
-
 # no hard-coding
 #print(__name__, " = app.py's value")
 
@@ -26,19 +18,11 @@ from constants import PLAYERS
 # use comprehensions instead of iterable loops
 # comprehension with and without conditions
 # lists with nested dictionaries
-# clean data
-# clean and loop
-# read the existing player data from the PLAYERS constants 
+# loop
 # copy.deepcopy()
 # save the cleaned data to a new collection
-# lists with nested dictionaries
-# clean height, experience
 # split is for string
 # sliciing or iteration for a list with nested dictionary
-
-
-				# use copy.deepcopy()
-				# save the cleaned data to a new collenction
 
 print("\n")
 print("BASKETBALL TEAM STATS TOOL\n")
@@ -47,14 +31,20 @@ print("---- MENU ----\n")
 
 
 def first():
-	var = input("A) Display Team stats")
-	if var == "A":
-		clean_data
-
+	first_var = input("Here are your choices:")
+	var = input("1) Display Team stats")
+	second_var = input("2) Quit\n")
+	var_x = input("Enter an option > \n")
+	if var_x == 1:
+		print("")
+	if var_x == 2:
+		break
+	else:
+		continue 
+first()
 
 
 def clean_data(PLAYERS):
-#new list named cleaned
 	var = input("A) Display Team stats")
 	if var == "A":
 	quit_var = input("B) Quit")
@@ -62,13 +52,11 @@ def clean_data(PLAYERS):
 		break
 	cleaned = []
 	copy.deepcopy(cleaned)
-#	int(height)	
-#	bool(experience)
+# clan also guardian. before adding it to the newly created collection. split up the guradian string into a list
 	for user in PLAYERS:
 		fixed = {} # dictionary per user
 		fixed["feet_tall"] = user["height"].split(" ")[0] # use to filter per height
-#		fixed["experience"] = user["experience"]
-#		print(user["height"]) # use to filter per height
+		fixed["var"] = user["guardians"].split("")[]
 		if user["experience"] == True:
 			fixed["experience"] = True
 		else:
@@ -97,8 +85,31 @@ def balance_(cleaned_data):
 # player names as strings separated by commas
 # do not display the list representation object
 
+print("Enter an option")
+print("\n")
+
+print("Enter an option")
+if 1, 2, or 3:
+print("\n")
+
+Panther stats = 
+
+print(f "Team: {Panther stats}")
+print("-------------------------")
+print("Total players:")
+print("Total experienced: ")
+print("Total inexperienced: ")
+print("Average height: ")
+
+
+print("Players on Team:")
 
 
 
+print("Guardians:")
 
+
+
+keep_var = input("Press ENTER to continue...")
+if keep_var == "ENTER":
 
