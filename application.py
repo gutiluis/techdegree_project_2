@@ -30,18 +30,47 @@ print("BASKETBALL TEAM STATS TOOL\n")
 print("---- MENU ----\n")
 
 
-def first():
-	first_var = input("Here are your choices:")
-	var = input("1) Display Team stats")
-	second_var = input("2) Quit\n")
-	var_x = input("Enter an option > \n")
-	if var_x == 1:
-		print("")
-	if var_x == 2:
-		break
-	else:
-		continue 
-first()
+def first_paragraph():
+	print("Here are your choices:")
+	print("  1) Display Team stats")
+	print("  2) Quit\n")
+	while True:
+		try:
+			var_x = int(input("Enter an option > \n"))
+			if var_x == 1:
+				panthers
+				print("1) Panthers")
+			if var_x == 2:
+				bandits
+				print("2) Bandits")
+			if var_x == 3:
+				warriors
+				print("3) Warriors")
+				break
+			if var_x == 0:
+				break
+			else:
+				continue
+			print("\n")
+			while True:
+				try:
+					var_y = int(input("Enter an option")
+					if var_y == 1:
+						print("")
+					if var_y == 2:
+						print("")
+					if var_y == 3:
+						print("")
+					if var_y == 0:
+						break
+				except ValueError as err: # show type of error?
+					print("Enter a valid input")
+		except ValueError as err:
+			print("Enter a valid input")
+
+first_paragraph()
+
+
 
 
 def clean_data(PLAYERS):
@@ -102,10 +131,11 @@ print("Total inexperienced: ")
 print("Average height: ")
 
 
+
 print("Players on Team:")
 
 
-
+# guardianss use and keyword for 2 values. to indicate more than one guardian
 print("Guardians:")
 
 
