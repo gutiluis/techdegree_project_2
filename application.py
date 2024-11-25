@@ -36,7 +36,7 @@ def first_paragraph():
 	print("  2) Quit\n")
 	while True:
 		try:
-			var_x = int(input("Enter an option > \n"))
+			var_x = int(input("Enter an option >\n "))
 			if var_x == 1:
 				panthers
 				print("1) Panthers")
@@ -54,12 +54,28 @@ def first_paragraph():
 			print("\n")
 			while True:
 				try:
-					var_y = int(input("Enter an option")
+					var_y = int(input("Enter an option >\n ")
 					if var_y == 1:
-						print("")
+						print("Team: Panthers Stats")
+						print("_____________________")
+						print("Total players: ")
+						print("Total experienced: ")
+						print("Total inexperienced:  ")
+						print("Average height: ")
 					if var_y == 2:
-						print("")
+						print("Team: Bandits Stats")
+						print("---------------------")
+						print("Total players: ")
+						print("Total experienced: ")
+						print("Total inexperienced: ")
+						print("Average height: ")
 					if var_y == 3:
+						print("Team: Warriors Stats")
+						print("--------------------")
+						print("Total players: ")
+						print("Total experienced: ")
+						print("Total inexperienced: ")
+						print("Average height: ")
 						print("")
 					if var_y == 0:
 						break
