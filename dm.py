@@ -225,6 +225,8 @@ def main():
 	clean_bandits(PLAYERS)
 	clean_warriors(PLAYERS)
 	gather_players_and_teams()
+	average_height()
+	guardians_extract()
 	combine_elements()
 
 
