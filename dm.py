@@ -30,16 +30,20 @@ def team_stats(team):
     print(f"Inexperienced players: {experienced}")
     print(f"Inexperienced players: {inexperienced}\n")
     print("Selected players\n")
-    list_var = []
+    list_var_heights = []
+    list_var_names = []
     for player in team:
         fixed = {}
         fixed["name"] = player["name"]
         fixed["tall"] = player["height"].split(" ")[0]
-        list_var.append(int(fixed["tall"]))
-        if list_var:
-            av = sum(list_var) / len(list_var)
-            print(f"- {fixed["name"]} {fixed["tall"]} inches")
-            print(f"Average: {av}")
+        list_var_heights.append(int(fixed["tall"]))
+        list_var_names.append(fixed["name"])
+    convert_to_string = ", ".join(list_var_names)
+    print(convert_to_string)
+    if list_var_heights:
+        av = sum(list_var_heights) / len(list_var_heights)
+        print(f"Team average: {av} inches")
+
 
 
 def greeting():
