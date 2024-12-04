@@ -18,6 +18,7 @@ def combine_(PLAYERS):
     print("\n3) WARRIORS:")
     team_stats(warriors)
     return {"panthers": panthers, "bandits": bandits, "warriors": warriors}
+    # loop syntax first. for comprehension
 
 
 def team_stats(team):
@@ -29,21 +30,26 @@ def team_stats(team):
     print(f"Inexperienced players: {experienced}")
     print(f"Inexperienced players: {inexperienced}\n")
     print("Selected players\n")
+    list_var = []
     for player in team:
         fixed = {}
         fixed["name"] = player["name"]
         fixed["tall"] = player["height"].split(" ")[0]
-        print(f"- {fixed["name"]} ({fixed["tall"]} inches")
+        list_var.append(int(fixed["tall"]))
+        if list_var:
+            av = sum(list_var) / len(list_var)
+            print(f"- {fixed["name"]} {fixed["tall"]} inches")
+            print(f"Average: {av}")
 
 
 def greeting():
     print("BASKETBALL TEAM STATS TOOL\n")
     print("---------------MENU------------\n")
     print(
-		"Here are your choices:\n",
-		"1) Display Team Stats\n",
-		"2) Quit \n"
-	)
+        "Here are your choices:\n",
+        "1) Display Team Stats\n",
+        "2) Quit \n"
+    )
     try:
         variable = int(input("Enter an option > "))
     except ValueError:
@@ -57,8 +63,10 @@ def greeting():
     else:
         sys.exit()
 
+
 def main():
-	greeting()
+    greeting()
+
 
 if __name__ == "__main__":
-	main()
+    main()
