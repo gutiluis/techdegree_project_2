@@ -1,3 +1,6 @@
 import dm
 
-dm.main()
+
+
+if__name__ == "__main__":
+    dm.py
