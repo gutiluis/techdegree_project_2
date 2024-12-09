@@ -42,7 +42,7 @@ def team_stats(team):
     print(convert_to_string)
     if list_var_heights:
         av = sum(list_var_heights) / len(list_var_heights)
-        print(f"Team average: {av} inches")
+        print(f"Team average: int({av}) inches")
 
 
 
