@@ -2,5 +2,5 @@ import dm
 
 
 
-if__name__ == "__main__":
-    dm.py
+if __name__ == "__main__":
+    dm.main()
